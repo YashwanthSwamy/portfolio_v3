@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
       },
+      screens: {
+        sm: '640px',
+      },
       colors: {
         black: {
           DEFAULT: '#000',
