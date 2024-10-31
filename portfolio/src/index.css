@@ -151,6 +151,27 @@ body {
   }
 }
 
+
+.streaky-glow {
+  position: relative;
+  font-family: inherit;
+  color: transparent;
+  background: linear-gradient(90deg, #fff, rgba(255, 200, 0, 0.679), #0ff, #fff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: glow 4s infinite alternate, streaky-move 4s linear infinite;
+}
+
+@keyframes streaky-move {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
 .waving-hand {
   animation-name: wave-animation;
   animation-duration: 2.5s;
