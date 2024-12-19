@@ -7,7 +7,11 @@ import HackerRoom from '../components/HackerRoom';
 import { Leva } from 'leva';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants';
+import { Spotlight } from '../components/Spotlight';
 import Target from '../components/Target';
+import ReactLogo from '../components/ReactLogo';
+import Cube from '../components/Cube';
+import Rings from '../components/Ring';
 
 
 const Hero = () => {
@@ -19,20 +23,31 @@ const Hero = () => {
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
     return (
-        <section className='hero-section min-h-screen w-full flex flex-col lg:flex-row relative'>
+        <section className="min-h-screen w-full flex flex-col relative" id="home">
+            <div>
+                <Spotlight
+                    className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+                    fill="white"
+                />
+                <Spotlight
+                    className="h-[80vh] w-[50vw] top-10 left-full"
+                    fill="purple"
+                />
+                <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+            </div>
 
-            <div className='w-full lg:w-1/2 flex flex-col sm:mt-36 mt-20 justify-start lg:pt-12'>
-                <p className='font-medium text-white text-[40px] xs:text-[50px] sm:text-[68px] md:text-[80px] lg:text-[100px] 2xl:text-[120px] leading-[110px] 2xl:leading-[120px]'>
-                    Yashwanth Swamy
+            <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
+                <p className='text-2xl  sm:text-4xl  font-bold text-white font-generalsans text-center'>
+                    Hi, I'm Yashwanth Swamy <span className="waving-hand">👋</span>
                 </p>
-                <p className='streaky-glow 2xl:mt-10 lg:mt-4 font-bold text-[14px] sm:text-[20px] md:text-[30px] 2xl:text-[32px] sm:leading-[20px] md:leading-[30px] 2xl:leading-[40px] max-w-sm 2xl:max-w-lg text-white'>
-                    Innovating Through Code & Creative Solutions
+                <p className='streaky-glow hero_tag'>
+                    Software Engineer & Designer
                 </p>
             </div>
 
 
 
-            <div className='w-full lg:w-1/2 h-full absolute inset-0 lg:inset-auto sm:mt-4 lg:top-0 lg:right-0 lg:bottom-0'>
+            <div className='w-full h-full absolute inset-0'>
                 <Leva />
                 <Canvas className='w-full h-full'>
                     <Suspense fallback={CanvasLoader}>
@@ -44,7 +59,10 @@ const Hero = () => {
                         />
 
                         <group>
-                            <Target position={sizes.targetPosition}></Target>
+                            <Target position={sizes.targetPosition} />
+                            <ReactLogo position={sizes.reactLogoPosition} />
+                            <Cube position={sizes.cubePosition} />
+                            <Rings position={sizes.ringPosition} />
                         </group>
 
                         <ambientLight intensity={1} />
