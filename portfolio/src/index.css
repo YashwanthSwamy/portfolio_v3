@@ -60,6 +60,10 @@ body {
     @apply text-center xl:text-4xl md:text-3xl sm:text-2xl text-3xl font-generalsans font-black !leading-normal;
   }
 
+  .blue-gradient_text {
+    @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+  }
+
   /* about section */
   .grid-container {
     @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm: p-7 p-4 flex flex-col gap-5;
