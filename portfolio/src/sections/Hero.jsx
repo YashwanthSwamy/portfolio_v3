@@ -12,9 +12,11 @@ import Target from '../components/Target';
 import ReactLogo from '../components/ReactLogo';
 import Cube from '../components/Cube';
 import Rings from '../components/Ring';
+import { FlipWords } from '../components/FlipWords';
 
 
 const Hero = () => {
+    const words = ["Developer", "Designer"]
 
     const isSmall = useMediaQuery({ maxWidth: 440 });
     const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -37,14 +39,17 @@ const Hero = () => {
             </div>
 
             <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
-                <p className='text-2xl  sm:text-4xl  font-bold text-white font-generalsans text-center'>
+                <p className='text-2xl  sm:text-4xl  text-slate-700 font-bold font-generalsans text-center'>
                     Hi, I'm Yashwanth Swamy <span className="waving-hand">👋</span>
                 </p>
-                <p className='streaky-glow hero_tag'>
-                    Software Engineer & Designer
-                </p>
-            </div>
+                <div className='flex inline-block justify-center text-4xl text-slate-600 font-bold font-generalsans text-center'>
+                    <p >Software</p>
 
+                    <div className='w-56'>
+                        <FlipWords words={words} />
+                    </div>
+                </div>
+            </div>
 
 
             <div className='w-full h-full absolute inset-0'>
