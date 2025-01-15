@@ -1,3 +1,27 @@
+import {
+    express,
+    github,
+    linkedin,
+    angular,
+    nodejs,
+    react,
+    redux,
+    tailwindcss,
+    typescript,
+    python,
+    java,
+    spring,
+    flask,
+    postgresql,
+    rabbitmq,
+    redis,
+    docker,
+    kubernetes,
+    aws,
+    cuboulder,
+    uvce
+} from "../icons";
+
 export const navLinks = [
     {
         id: 1,
@@ -20,6 +44,113 @@ export const navLinks = [
         href: '#contact',
     },
 ];
+
+export const skills = [
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: java,
+        name: "Java",
+        type: "Programming Language",
+    },
+    {
+        imageUrl: react,
+        name: "React",
+        type: "Frontend",
+    },
+    {
+        imageUrl: angular,
+        name: "Angular",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwindcss,
+        name: "Tailwind",
+        type: "Frontend",
+    },
+    {
+        imageUrl: redux,
+        name: "Redux",
+        type: "State Management",
+    },
+    {
+        imageUrl: nodejs,
+        name: "Node.js",
+        type: "Backend",
+    },
+    {
+        imageUrl: express,
+        name: "Express",
+        type: "Backend",
+    },
+    {
+        imageUrl: flask,
+        name: "",
+        type: "Backend",
+    },
+    {
+        imageUrl: spring,
+        name: "Spring",
+        type: "Backend",
+    },
+    {
+        imageUrl: postgresql,
+        name: "PostgreSQL",
+        type: "Database",
+    },
+    {
+        imageUrl: redis,
+        name: "Redis",
+        type: "Database",
+    },
+    {
+        imageUrl: rabbitmq,
+        name: "RabbitMQ",
+        type: "Message Broker",
+    },
+    {
+        imageUrl: docker,
+        name: "",
+        type: "Deployment",
+    },
+    {
+        imageUrl: kubernetes,
+        name: "Kubernetes",
+        type: "Deployment",
+    },
+    {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Cloud Services",
+    },
+];
+
+export const education = [
+    {
+        iconUrl: cuboulder,
+        theme: 'btn-back-black',
+        name: 'Masters in Computer Science',
+        university: 'University of Colorado Boulder',
+        date: "Aug 2022 - May 2024",
+        gpa: "3.9 out of 4.0",
+    },
+    {
+        iconUrl: uvce,
+        theme: 'btn-back-yellow',
+        name: 'Bachelors in Computer Science',
+        university: 'University Visvesvaraya College of Engineering',
+        date: "Aug 2014 - Jun 2018",
+        gpa: "72.5 out of 100",
+    },
+]
 
 export const clientReviews = [
     {
@@ -250,9 +381,9 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
         deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.07,
         deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-        cubePosition: isSmall ? [5, -5, 0] : isMobile ? [6, -5, 0] : isTablet ? [7, -6, 0] : [10, -5.5, 0],
-        reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [6, 5, 0],
-        ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-18, 12, 0] : [-24, 10, 0],
+        cubePosition: isSmall ? [3, -7, 0] : isMobile ? [5, -5, 0] : isTablet ? [7, -6, 0] : [10, -5.5, 0],
+        reactLogoPosition: isSmall ? [2, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [6, 5, 0],
+        ringPosition: isSmall ? [-10, 12, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-18, 12, 0] : [-24, 10, 0],
         targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
     };
 };

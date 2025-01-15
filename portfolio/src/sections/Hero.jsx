@@ -42,12 +42,9 @@ const Hero = () => {
                 <p className='text-2xl  sm:text-4xl  text-slate-700 font-bold font-generalsans text-center'>
                     Hi, I'm Yashwanth Swamy <span className="waving-hand">👋</span>
                 </p>
-                <div className='flex inline-block justify-center text-4xl text-slate-600 font-bold font-generalsans text-center'>
+                <div className='flex inline-block justify-center text-2xl  sm:text-4xl text-slate-600 font-bold font-generalsans text-center'>
                     <p >Software</p>
-
-                    <div className='w-56'>
-                        <FlipWords words={words} />
-                    </div>
+                    <FlipWords words={words} />
                 </div>
             </div>
 
