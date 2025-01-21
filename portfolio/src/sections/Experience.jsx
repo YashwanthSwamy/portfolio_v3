@@ -121,7 +121,7 @@ const Experience = () => {
     ];
 
     return (
-        <section className="min-h-screen w-full flex flex-col relative" id="experience">
+        <section className="min-h-screen w-full flex flex-col relative" id="work">
             <div className='px-10'>
                 <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans"> Experience</h3>
             </div>
