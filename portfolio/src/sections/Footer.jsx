@@ -5,11 +5,8 @@ import { FloatingSocial } from '../components/FloatingSocial';
 import MagicButton from '../components/MagicButton';
 import {
     IconBrandGithub,
-    IconBrandX,
-    IconExchange,
+    IconBrandLinkedinFilled,
     IconHome,
-    IconNewSection,
-    IconTerminal2,
 } from "@tabler/icons-react";
 
 const Footer = () => {
@@ -21,42 +18,19 @@ const Footer = () => {
             ),
             href: "#",
         },
-
         {
-            title: "Products",
+            title: "Linkedin",
             icon: (
-                <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandLinkedinFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
-        },
-        {
-            title: "Components",
-            icon: (
-                <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-        {
-            title: "Changelog",
-            icon: (
-                <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
-        },
-
-        {
-            title: "Twitter",
-            icon: (
-                <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-            ),
-            href: "#",
+            href: "https://www.linkedin.com/in/yashwanthhs/",
         },
         {
             title: "GitHub",
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/YashwanthSwamy",
         },
     ];
 
