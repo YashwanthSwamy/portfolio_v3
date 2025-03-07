@@ -64,6 +64,8 @@ const Contact = () => {
             );
     };
 
+    const isFormValid = form.name.trim() !== "" && form.email.trim() !== "" && form.message.trim() !== "";
+
     return (
         <section className="c-space my-20" id="contact">
             {alert.show && <Alert {...alert} />}
@@ -117,7 +119,7 @@ const Contact = () => {
                             />
                         </label>
 
-                        <button className="field-btn" type="submit" disabled={loading}>
+                        <button type="submit" disabled={!isFormValid || loading} className={`field-btn ${!isFormValid ? "opacity-50 cursor-not-allowed" : ""}`}>
                             {loading ? 'Sending...' : 'Send Message'}
 
                             <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
