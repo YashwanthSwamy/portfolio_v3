@@ -3,10 +3,10 @@ import { skills, education } from "../constants";
 
 const Skills = () => {
     return (
-        <section className="min-h-screen w-full flex flex-col relative bg-slate-100" id="skills">
+        <section className="min-h-screen w-full flex flex-col relative" id="skills">
             <div className='w-full mx-auto flex flex-col c-space gap-3'>
                 <div className="py-10 flex flex-col">
-                    <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans underline underline-offset-4"> My Skills</h3>
+                    <h3 className="text-xl  sm:text-3xl text-slate-100 font-bold font-generalsans underline underline-offset-4"> My Skills</h3>
                     <div className="mt-16 flex flex-wrap gap-12 sm:items-center sm:justify-center sm:pr-10">
                         {skills.map((skill, index) => (
                             <div className="block-container w-24 h-20 " key={`${skill}-${index}`}>
@@ -21,13 +21,13 @@ const Skills = () => {
                 </div>
 
                 <div>
-                    <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans underline underline-offset-4"> Education</h3>
+                    <h3 className="text-xl  sm:text-3xl text-slate-100 font-bold font-generalsans underline underline-offset-4"> Education</h3>
                 </div>
                 <div className="flex flex-wrap my-4 gap-16">
                     {education.map((education, index) => (
-                        <div className=" w-full flex flex-row gap-12 mt-4" key={`${education.university}-${index}`}>
+                        <div className=" w-full flex flex-row gap-12 mt-4 text-slate-100" key={`${education.university}-${index}`}>
                             <div className="block-container w-12 h-12">
-                                <div className={`btn-back-orange rounded-xl ${education.theme}`} />
+                                <div className={`btn-back-orange rounded-xl`} />
                                 <div className="btn-front rounded-xl flex justify-center items-center">
                                     <img src={education.iconUrl} alt="project-icon" className="w-3/4 h-3/4 object-contain" />
                                 </div>

@@ -18,7 +18,7 @@ export const Timeline = ({
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
-        offset: ["start 10%", "end 50%"],
+        offset: ["start 25%", "end 75%"],
     });
 
     const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -34,16 +34,16 @@ export const Timeline = ({
                         <div
                             className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                             <div
-                                className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white flex items-center justify-center">
+                                className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-neutral-500 flex items-center justify-center">
                                 <div
-                                    className="h-4 w-4 rounded-full bg-neutral-200 border border-neutral-300 p-2" />
+                                    className="h-4 w-4 rounded-full bg-white border border-white p-2" />
                             </div>
                             <div>
                                 <h3
-                                    className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 ">
+                                    className={`hidden md:block text-xl md:pl-20 md:text-5xl font-bold ${item.title_color}`}>
                                     {item.title}
                                 </h3>
-                                <h6 className="hidden md:block text-xl md:pl-20 md:text-l text-neutral-500 ">
+                                <h6 className={`hidden md:block text-xl md:pl-20 md:text-l text-neutral-500`}>
                                     {item.subtitle} <br /> {item.duration}
                                 </h6>
                             </div>
@@ -52,7 +52,7 @@ export const Timeline = ({
                         <div className="relative pl-20 pr-4 md:pl-4 w-full">
                             <div>
                                 <h3
-                                    className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500">
+                                    className="md:hidden block text-2xl mb-4 text-left font-bold text-orange-50">
                                     {item.title}
                                 </h3>
                                 <h6 className="md:hidden block text-l mb-4 text-left font-bold text-neutral-500">
@@ -73,7 +73,7 @@ export const Timeline = ({
                             height: heightTransform,
                             opacity: opacityTransform,
                         }}
-                        className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full" />
+                        className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-teal-500 via-teal-200 to-transparent from-[0%] via-[40%] rounded-full" />
                 </div>
             </div>
         </div>)

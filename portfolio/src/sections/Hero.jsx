@@ -28,10 +28,10 @@ const Hero = () => {
         <section className="min-h-screen w-full flex flex-col relative" id="home">
             <HeroBackground className='min-h-screen w-full'>
                 <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3'>
-                    <p className='text-2xl  sm:text-4xl  text-slate-700 font-bold font-generalsans text-center'>
+                    <p className='text-2xl  sm:text-4xl  text-slate-100 font-bold font-generalsans text-center'>
                         Hi, I'm Yashwanth Swamy <span className="waving-hand">👋</span>
                     </p>
-                    <div className='flex inline-block justify-center text-2xl  sm:text-4xl text-slate-600 font-bold font-generalsans text-center'>
+                    <div className='flex inline-block justify-center text-2xl  sm:text-4xl text-slate-100 font-bold font-generalsans text-center'>
                         <p >Software</p>
                         <FlipWords words={words} />
                     </div>

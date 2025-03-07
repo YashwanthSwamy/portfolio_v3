@@ -31,7 +31,7 @@ const NavBar = () => {
                         <img src="assets/icon.png" alt="logo" className='' />
                     </div>
 
-                    <button onClick={toggleMenu} className="text-black hover:text-teal-300 focus:outline-none sm:hidden flex hover:border-b-1 border-teal-300 rounded-lg bg-slate-400" aria-label='Toggle Menu'>
+                    <button onClick={toggleMenu} className="text-black hover:text-teal-300 focus:outline-none sm:hidden flex hover:border-b-1 border-teal-300 rounded-lg" aria-label='Toggle Menu'>
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className='w-6 h-6' />
                     </button>
 

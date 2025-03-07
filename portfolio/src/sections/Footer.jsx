@@ -14,30 +14,36 @@ const Footer = () => {
         {
             title: "Home",
             icon: (
-                <IconHome className="h-full w-full text-neutral-500" />
+                <IconHome className="h-full w-full text-neutral-500 hover:text-teal-500" />
             ),
             href: "#",
+            target: "",
+            rel: "",
         },
         {
             title: "Linkedin",
             icon: (
-                <IconBrandLinkedinFilled className="h-full w-full text-neutral-500" />
+                <IconBrandLinkedinFilled className="h-full w-full text-neutral-500 hover:text-teal-500" />
             ),
             href: "https://www.linkedin.com/in/yashwanthhs/",
+            target: "_blank",
+            rel: "noopener noreferrer",
         },
         {
             title: "GitHub",
             icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500" />
+                <IconBrandGithub className="h-full w-full text-neutral-500 hover:text-teal-500" />
             ),
             href: "https://github.com/YashwanthSwamy",
+            target: "_blank",
+            rel: "noopener noreferrer",
         },
     ];
 
     return (
         <section className="w-full pb-6 mb-[50px] py-4 md:mb-4">
             <div className="flex flex-col items-center">
-                <p className="text-white-200 md:mt-10 text-center">
+                <p className="text-white md:mt-10 text-center">
                     Have a project in mind? Lets build something together.
                 </p>
                 <a href="mailto:yashwanth_swamy@outlook.com">
@@ -50,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className="flex mt-4 md:flex-row flex-col justify-between items-center">
-                <p className="md:text-base text-sm md:font-normal font-light">
+                <p className="md:text-base text-sm md:font-normal font-light text-white">
                     Copyright © 2025 Yashwanth Hirehalli Swamy
                 </p>
 

@@ -136,7 +136,7 @@ export const skills = [
 export const education = [
     {
         iconUrl: cuboulder,
-        theme: 'btn-back-black',
+        theme: 'btn-back-orange',
         name: 'Masters in Computer Science',
         university: 'University of Colorado Boulder',
         date: "Aug 2022 - May 2024",

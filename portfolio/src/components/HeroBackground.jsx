@@ -10,7 +10,7 @@ export const HeroBackground = ({
 }) => {
     return (
         (<div
-            className={cn("h-[20rem] md:h-screen w-full bg-slate-100", className)}>
+            className={cn("h-[20rem] md:h-screen w-full ", className)}>
             <SVG svgOptions={svgOptions} />
             {children}
         </div>)
