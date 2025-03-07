@@ -6,7 +6,7 @@ const Skills = () => {
         <section className="min-h-screen w-full flex flex-col relative bg-slate-100" id="skills">
             <div className='w-full mx-auto flex flex-col c-space gap-3'>
                 <div className="py-10 flex flex-col">
-                    <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans"> My Skills</h3>
+                    <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans underline underline-offset-4"> My Skills</h3>
                     <div className="mt-16 flex flex-wrap gap-12 sm:items-center sm:justify-center sm:pr-10">
                         {skills.map((skill, index) => (
                             <div className="block-container w-24 h-20 " key={`${skill}-${index}`}>
@@ -21,7 +21,7 @@ const Skills = () => {
                 </div>
 
                 <div>
-                    <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans"> Education</h3>
+                    <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans underline underline-offset-4"> Education</h3>
                 </div>
                 <div className="flex flex-wrap my-4 gap-16">
                     {education.map((education, index) => (

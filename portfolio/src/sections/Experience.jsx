@@ -30,7 +30,7 @@ const Experience = () => {
             subtitle: "Senior Software Engineer",
             duration: "June 2024 - Present",
             content: (
-                <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 text-justify">
+                <div className="text-neutral-800 text-xs md:text-sm font-normal mb-8 text-justify">
                     <p className='pb-4'>
                         • Collaborated within a team to migrate vehicle software and Over-The-Air (OTA) update systems from AWS to GCP, leveraging Jenkins for CI/CD and Terraform for infrastructure-as-code, ensuring a smooth transition.
                     </p>
@@ -58,7 +58,7 @@ const Experience = () => {
             subtitle: "Software Engineer Intern",
             duration: "June 2023 - August 2023",
             content: (
-                <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 text-justify">
+                <div className="text-neutral-800 text-xs md:text-sm font-normal mb-8 text-justify">
                     <p className='pb-4'>
                         • Developed and implemented a configuration tool using Spring Boot, React, and Redux, reducing processing times for large datasets by 45% and improving data handling efficiency.
                     </p>
@@ -83,7 +83,7 @@ const Experience = () => {
             subtitle: "Senior Software Engineer",
             duration: "July 2018 - July 2022",
             content: (
-                <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 text-justify">
+                <div className="text-neutral-800 text-xs md:text-sm font-normal mb-8 text-justify">
                     <p className='pb-4'>
                         • Designed and developed multi-threaded solutions for EV charging platforms using Kafka with Python and Java, reducing system latency by 93% (800ms to 50ms), ensuring high performance and reliability.
                     </p>
@@ -121,9 +121,9 @@ const Experience = () => {
     ];
 
     return (
-        <section className="min-h-screen w-full flex flex-col relative" id="work">
+        <section className="min-h-screen w-full flex flex-col relative my-10" id="work">
             <div className='px-10'>
-                <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold font-generalsans"> Experience</h3>
+                <h3 className="text-xl  sm:text-2xl text-slate-600 font-bold underline underline-offset-4 font-generalsans"> Experience</h3>
             </div>
             <Timeline data={data} />
         </section>

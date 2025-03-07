@@ -14,21 +14,21 @@ const Footer = () => {
         {
             title: "Home",
             icon: (
-                <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconHome className="h-full w-full text-neutral-500" />
             ),
             href: "#",
         },
         {
             title: "Linkedin",
             icon: (
-                <IconBrandLinkedinFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandLinkedinFilled className="h-full w-full text-neutral-500" />
             ),
             href: "https://www.linkedin.com/in/yashwanthhs/",
         },
         {
             title: "GitHub",
             icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandGithub className="h-full w-full text-neutral-500" />
             ),
             href: "https://github.com/YashwanthSwamy",
         },
