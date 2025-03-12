@@ -33,13 +33,13 @@ const Experience = () => {
             content: (
                 <div className="experience-text text-white text-xs md:text-sm font-normal mb-8 text-justify">
                     <p className='pb-4'>
-                        • Collaborated within a team to migrate vehicle software and Over-The-Air (OTA) update systems from <span className='font-bold highlight-span'>AWS to GCP</span>, leveraging <span className='font-bold highlight-span'>Jenkins for CI/CD and Terraform</span> for infrastructure-as-code, ensuring a smooth transition.
+                        • Constructed infrastructure-as-code using Terraform and Jenkins for vehicle software migration <span className='font-bold highlight-span'>Over-The-Air (OTA) systems from AWS to GCP,</span> ensuring a smooth transition
                     </p>
                     <p className='pb-4'>
-                        • Designed and implemented an integration solution to connect Microsoft Teams workflows with Jira issue creation, leveraging <span className='font-bold highlight-span'>Nest.js and RESTful APIs</span> streamlining issue tracking and improving response times by 30%, while enhancing team productivity and collaboration.
+                        • Accelerated issue tracking and reporting efficiency by 30% through architecting a <span className='font-bold highlight-span'>custom Jira and Microsoft Teams</span> integration leveraging <span className='font-bold highlight-span'>Java, Node.js and RESTful APIs</span>
                     </p>
                     <p className='pb-4'>
-                        • Increased unit test coverage of core services to over 75% using <span className='font-bold highlight-span'>Jest, Mockito, and JUnit</span> bolstering system stability and reducing production defects by 50%.
+                        • Deployed comprehensive unit tests, achieving 90% coverage of crucial API endpoints with <span className='font-bold highlight-span'>Jest and Mockito </span>, reducing critical issues in the subsequent quarterly release
                     </p>
                     <div className="flex flex-wrap justify-start pt-4">
                         {canooIconLists.map((icon, index) => (
@@ -62,10 +62,10 @@ const Experience = () => {
             content: (
                 <div className="experience-text text-white  text-xs md:text-sm font-normal mb-8 text-justify">
                     <p className='pb-4'>
-                        • Developed and implemented a configuration tool using <span className='font-bold highlight-span'>Spring Boot, React, and Redux</span> reducing processing times for large datasets by 45% and improving data handling efficiency.
+                        • Developed a solution with <span className='font-bold highlight-span'>Spring Cloud Config Server</span> to manage and access configuration <span className='font-bold highlight-span'>report versions from GitLab</span>, reducing configuration errors to less than 1%
                     </p>
                     <p className='pb-4'>
-                        • Built integration solution leveraging <span className='font-bold highlight-span'>Spring Cloud Config Server</span> to access configuration reports from GitLab, resulting in a 25% boost in operational efficiency.
+                        • Orchestrated the development of a configuration tool using <span className='font-bold highlight-span'>Spring Boot, React, and Redux</span>, which accelerated processing times for large datasets by 45% and enhanced data handling efficiency, enabling faster reporting
                     </p>
                     <div className="flex flex-wrap justify-start pt-4">
                         {nasdaqIconLists.map((icon, index) => (
@@ -88,25 +88,28 @@ const Experience = () => {
             content: (
                 <div className="experience-text text-white text-xs md:text-sm font-normal mb-8 text-justify">
                     <p className='pb-4'>
-                        • Designed and developed multi-threaded solutions for EV charging platforms using <span className='font-bold highlight-span'>Kafka with Python and Java</span> reducing system <span className='font-bold highlight-span'>latency by 93% (800ms to 50ms)</span>, ensuring high performance and reliability.
+                        • Architected <span className='font-bold highlight-span'>asynchronous, event-driven architecture</span> for EV charging platform utilizing <span className='font-bold highlight-span'>Kafka with Java, Python and Node.js</span> accelerating system responsiveness and slashed latency from 800ms to 50ms improving reliability
                     </p>
                     <p className='pb-4'>
-                        • Developed smart charging dashboards using <span className='font-bold highlight-span'>Angular and Redux</span> improving application performance and user experience by 40%.
+                        • Developed interactive dashboards leveraging <span className='font-bold highlight-span'> Angular and Redux </span> visualizing real-time EV charging data that boosted application performance by 40% and enhanced user experience across 1M users
                     </p>
                     <p className='pb-4'>
                         • <span className='font-bold highlight-span'>Enhanced scalability</span> of high-load services by optimizing Kubernetes jobs, achieving a 70% increase in performance under peak usage.
                     </p>
                     <p className='pb-4'>
-                        • Collaborated on the development of a <span className='font-bold highlight-span'>predictive maintenance algorithm </span> for smart charging stations, reducing fault occurrences by 30%.
+                        • Transformed microservices scalability by overhauling <span className='font-bold highlight-span'>Kubernetes job management and Spring Boot service </span> threading models, handling 10,000+ concurrent EV charging requests without system degradation
                     </p>
                     <p className='pb-4'>
-                        • Optimized charging efficiency by 48% andreduced power costs by 20% through collaboration on a preconditioning algorithm, contributing to measurable business benefits.
+                        • Devised <span className='font-bold highlight-span'>preconditioning algorithms</span>, which optimized energy utilization, decreased peak load demand by 30%, and reduced grid stress which was critical for reducing energy bill
                     </p>
                     <p className='pb-4'>
-                        • Streamlined CI/CD pipelines using <span className='font-bold highlight-span'>Jenkins, Docker, and GitLab</span> improving build and deployment efficiency by 25%.
+                        • Engineered introduction, an interactive onboarding prompt, which <span className='font-bold highlight-span'>automated</span> key aspects of the customer onboarding experience, resulting in a 40% reduction in time spent on initial setup
                     </p>
                     <p className='pb-4'>
-                        • Wrote comprehensive unit and integration tests with Mocha, Chai, and JUnit, employing <span className='font-bold highlight-span'>Test-Driven Development (TDD)</span>  principles to ensure adherence to functional requirements and improve code quality.
+                        • <span className='font-bold highlight-span'>Automated database migrations</span> using a .NET tool that cloned repositories and executed version-specific migrations, decreasing manual effort by 60% and improving deployment efficiency by 45%
+                    </p>
+                    <p className='pb-4'>
+                        • Constructed a suite of end-to-end tests for critical microservices by adopting Mocha, Chai, and Jest. the outcome was achieving a automate critical business functionality use case, validated on each pull request
                     </p>
                     <div className="flex flex-wrap justify-start pt-4">
                         {siemensIconLists.map((icon, index) => (
