@@ -1,7 +1,7 @@
 import React from 'react'
 import { Timeline } from '../components/Timeline';
 import {
-    express,
+    nest,
     angular,
     nodejs,
     react,
@@ -23,7 +23,7 @@ import {
 const Experience = () => {
     const canooIconLists = [typescript, python, flask, react, redux, tailwindcss, docker, kubernetes, aws];
     const nasdaqIconLists = [typescript, java, react, redux, tailwindcss, spring, docker, kubernetes, aws];
-    const siemensIconLists = [typescript, python, angular, nodejs, flask, redux, postgresql, rabbitmq, redis, express, docker, kubernetes, aws];
+    const siemensIconLists = [typescript, python, angular, nodejs, flask, redux, postgresql, rabbitmq, redis, nest, docker, kubernetes, aws];
     const data = [
         {
             title: "Canoo",
@@ -45,7 +45,7 @@ const Experience = () => {
                         {canooIconLists.map((icon, index) => (
                             <div
                                 key={icon}
-                                className=" border-1 border-transparent animate-border rounded-full bg-neutral-300 w-12 h-12 lg:w-18 lg:h-18 flex justify-center items-center"
+                                className=" border-1 glass-background animate-border rounded-full bg-neutral-300 w-12 h-12 lg:w-18 lg:h-18 flex justify-center items-center"
                             >
                                 <img src={icon} alt={`Logo ${index}`} className="p-3" />
                             </div>
@@ -71,7 +71,7 @@ const Experience = () => {
                         {nasdaqIconLists.map((icon, index) => (
                             <div
                                 key={icon}
-                                className="border-1 border-transparent animate-border rounded-full bg-neutral-300 w-12 h-12 lg:w-18 lg:h-18 flex justify-center items-center"
+                                className="border-1 glass-background animate-border rounded-full bg-neutral-300 w-12 h-12 lg:w-18 lg:h-18 flex justify-center items-center"
                             >
                                 <img src={icon} alt={`Logo ${index}`} className="p-3" />
                             </div>
@@ -115,7 +115,7 @@ const Experience = () => {
                         {siemensIconLists.map((icon, index) => (
                             <div
                                 key={icon}
-                                className="border-1 border-transparent animate-border rounded-full bg-neutral-300 w-12 h-12 lg:w-18 lg:h-18 flex justify-center items-center"
+                                className="border-1 glass-background animate-border rounded-full bg-neutral-300 w-12 h-12 lg:w-18 lg:h-18 flex justify-center items-center"
                             >
                                 <img src={icon} alt={`Logo ${index}`} className="p-3" />
                             </div>

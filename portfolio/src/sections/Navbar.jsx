@@ -24,7 +24,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className='fixed top-0 left-0 right-0 z-50 bg-transparent text-white hover:border-b-2 border-teal-300'>
+        <div className='fixed top-0 left-0 right-0 z-50 glass-background text-white hover:border-b-2 border-teal-300'>
             <div className='max-w-7xl mx-auto'>
                 <div className='flex justify-between items-center py-5 mx-auto c-space'>
                     <div className='w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md'>

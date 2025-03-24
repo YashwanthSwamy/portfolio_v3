@@ -1,5 +1,5 @@
 import {
-    express,
+    nest,
     github,
     linkedin,
     angular,
@@ -87,8 +87,8 @@ export const skills = [
         type: "Backend",
     },
     {
-        imageUrl: express,
-        name: "Express",
+        imageUrl: nest,
+        name: "Nest.js",
         type: "Backend",
     },
     {
@@ -140,7 +140,7 @@ export const education = [
         name: 'Masters in Computer Science',
         university: 'University of Colorado Boulder',
         date: "Aug 2022 - May 2024",
-        gpa: "3.9 out of 4.0",
+        gpa: "3.9/4.0",
     },
     {
         iconUrl: uvce,
@@ -148,7 +148,7 @@ export const education = [
         name: 'Bachelors in Computer Science',
         university: 'University Visvesvaraya College of Engineering',
         date: "Aug 2014 - Jun 2018",
-        gpa: "72.5 out of 100",
+        gpa: "72.5/100",
     },
 ]
 

@@ -13,7 +13,7 @@ const Skills = () => {
                                 <div className="btn-back rounded-xl" />
                                 <div className="btn-front rounded-xl justify-center items-center flex flex-col ">
                                     <img src={skill.imageUrl} alt={skill.name} className="w-1/2 h-1/2 object-contain" />
-                                    <p className='text-sm'>{skill.name}</p>
+                                    <p className='text-sm text-white'>{skill.name}</p>
                                 </div>
                             </div>
                         ))}
@@ -28,7 +28,7 @@ const Skills = () => {
                         <div className=" w-full flex flex-row gap-12 mt-4 text-slate-100" key={`${education.university}-${index}`}>
                             <div className="block-container w-12 h-12">
                                 <div className={`btn-back-orange rounded-xl`} />
-                                <div className="btn-front rounded-xl flex justify-center items-center">
+                                <div className="bg-white rounded-xl p-1 flex justify-center items-center">
                                     <img src={education.iconUrl} alt="project-icon" className="w-3/4 h-3/4 object-contain" />
                                 </div>
                             </div>
