@@ -4,7 +4,21 @@ import { navLinks } from '../constants';
 
 const NavItems = () => {
     return (
-        <ul className='nav-ul sm:glass-background'>
+        <ul className='nav-ul'>
+            {
+                navLinks.map(({ id, name, href }) => (
+                    <li key={id} className='nav-li'>
+                        <a href={href} className='nav-li-a'> {name}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    );
+}
+
+const MobileNavItems = () => {
+    return (
+        <ul className='nav-ul glass-background'>
             {
                 navLinks.map(({ id, name, href }) => (
                     <li key={id} className='nav-li'>
@@ -37,7 +51,7 @@ const NavBar = () => {
       }, []);
 
     return (
-        <div className='fixed top-0 left-0 right-0 z-50 glass-background text-white hover:border-b-2 border-teal-300'>
+        <div ref={navRef} className='fixed top-0 left-0 right-0 z-50 glass-background text-white hover:border-b-2 border-teal-300'>
             <div className='max-w-7xl mx-auto'>
                 <div className='flex justify-between items-center py-5 mx-auto c-space'>
                     <div className='w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md'>
@@ -48,7 +62,7 @@ const NavBar = () => {
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className='w-6 h-6' />
                     </button>
 
-                    <nav ref={navRef} className='sm:flex hidden'>
+                    <nav className='sm:flex hidden'>
                         <NavItems />
                     </nav>
 
@@ -57,7 +71,7 @@ const NavBar = () => {
 
             <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
                 <nav className='p-5'>
-                    <NavItems />
+                    <MobileNavItems />
                 </nav>
             </div>
         </div>
