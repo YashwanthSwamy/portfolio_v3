@@ -74,7 +74,7 @@ export const sidebarLinks = [
         icon: (
             <IconMail className="h-full w-full text-neutral-500 hover:text-teal-500" />
         ),
-        href: "mail:to",
+        href: "mailto:yashwanth_swamy@outlook.com",
         target: "_blank",
         rel: "noopener noreferrer",
     },

@@ -1,10 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect, useRef} from 'react';
 import { navLinks } from '../constants';
 
 const NavItems = () => {
     return (
-        <ul className='nav-ul'>
+        <ul className='nav-ul sm:glass-background'>
             {
                 navLinks.map(({ id, name, href }) => (
                     <li key={id} className='nav-li'>
@@ -18,10 +18,23 @@ const NavItems = () => {
 
 const NavBar = () => {
     const [isOpen, setOpen] = useState(false);
+    const navRef = useRef(null);
 
     const toggleMenu = () => {
         setOpen((prevState) => !prevState);
     }
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+          if (navRef.current && !navRef.current.contains(event.target)) {
+            setOpen(false);
+          }
+        };
+    
+        document.addEventListener('mousedown', handleClickOutside);
+    
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+      }, []);
 
     return (
         <div className='fixed top-0 left-0 right-0 z-50 glass-background text-white hover:border-b-2 border-teal-300'>
@@ -35,7 +48,7 @@ const NavBar = () => {
                         <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className='w-6 h-6' />
                     </button>
 
-                    <nav className='sm:flex hidden'>
+                    <nav ref={navRef} className='sm:flex hidden'>
                         <NavItems />
                     </nav>
 

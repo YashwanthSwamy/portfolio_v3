@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+// import { motion, useInView } from "framer-motion";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
@@ -11,23 +11,23 @@ import { FloatingSocial } from './components/FloatingSocial';
 
 import { sidebarLinks } from './constants';
 
-const SectionWrapper = ({ children, animation }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { triggerOnce: false, margin: "-50px" });
+// const SectionWrapper = ({ children, animation }) => {
+//   const ref = useRef(null);
+//   const isInView = useInView(ref, { triggerOnce: false, margin: "-50px" });
 
-  return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      variants={animation}
-      transition={{ duration: 0.8, ease: "easeOut", bounce: 0.3 }}
-      className="overflow-hidden" // prevents scroll issues
-    >
-      {children}
-    </motion.div>
-  );
-};
+//   return (
+//     <motion.div
+//       ref={ref}
+//       initial="hidden"
+//       animate={isInView ? "visible" : "hidden"}
+//       variants={animation}
+//       transition={{ duration: 0.8, ease: "easeOut", bounce: 0.3 }}
+//       className="overflow-hidden" // prevents scroll issues
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// };
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -52,10 +52,10 @@ const App = () => {
   //   visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 80 } },
   // };
 
-  const scaleUp = {
-    hidden: { opacity: 0, scale: 0.6 },
-    visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 100 } },
-  };
+  // const scaleUp = {
+  //   hidden: { opacity: 0, scale: 0.6 },
+  //   visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 100 } },
+  // };
 
   // const rotateEffect = {
   //   hidden: { opacity: 0, rotate: -15 },
@@ -69,25 +69,25 @@ const App = () => {
       <div className={loading ? "hidden" : "block"}>
         <NavBar />
 
-        <SectionWrapper animation={scaleUp}>
+        {/* <SectionWrapper animation={scaleUp}>
           <Hero />
-        </SectionWrapper>
-        {/* <Hero /> */}
+        </SectionWrapper> */}
+        <Hero />
 
-        <SectionWrapper animation={scaleUp}>
+        {/* <SectionWrapper animation={scaleUp}>
           <Skills />
-        </SectionWrapper>
-        {/* <Skills /> */}
+        </SectionWrapper> */}
+        <Skills />
 
-        <SectionWrapper animation={scaleUp}>
+        {/* <SectionWrapper animation={scaleUp}>
           <Experience />
-        </SectionWrapper>
-        {/* <Experience /> */}
+        </SectionWrapper> */}
+        <Experience />
 
-        <SectionWrapper animation={scaleUp}>
+        {/* <SectionWrapper animation={scaleUp}>
           <Contact />
-        </SectionWrapper>
-        {/* <Contact /> */}
+        </SectionWrapper> */}
+        <Contact />
       
         <Footer />
       </div>
