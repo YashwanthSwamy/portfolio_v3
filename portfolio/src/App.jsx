@@ -7,6 +7,9 @@ import Hero from "./sections/Hero";
 import Loader from "./sections/Loader";
 import NavBar from "./sections/NavBar";
 import Skills from "./sections/Skills";
+import { FloatingSocial } from './components/FloatingSocial';
+
+import { sidebarLinks } from './constants';
 
 const SectionWrapper = ({ children, animation }) => {
   const ref = useRef(null);
@@ -85,6 +88,11 @@ const App = () => {
           <Footer />
         </SectionWrapper>
       </div>
+      {!loading && <aside className="fixed right-6 top-1/2 -translate-y-1/2">
+        <FloatingSocial
+          items={sidebarLinks}
+        />
+      </aside>}
     </main>
   );
 };

@@ -3,43 +3,9 @@ import React from 'react';
 import { FaLocationArrow } from 'react-icons/fa6';
 import { FloatingSocial } from '../components/FloatingSocial';
 import MagicButton from '../components/MagicButton';
-import {
-    IconBrandGithub,
-    IconBrandLinkedinFilled,
-    IconHome,
-} from "@tabler/icons-react";
+import { sidebarLinks } from '../constants';
 
 const Footer = () => {
-    const links = [
-        {
-            title: "Home",
-            icon: (
-                <IconHome className="h-full w-full text-neutral-500 hover:text-teal-500" />
-            ),
-            href: "#",
-            target: "",
-            rel: "",
-        },
-        {
-            title: "Linkedin",
-            icon: (
-                <IconBrandLinkedinFilled className="h-full w-full text-neutral-500 hover:text-teal-500" />
-            ),
-            href: "https://www.linkedin.com/in/yashwanthhs/",
-            target: "_blank",
-            rel: "noopener noreferrer",
-        },
-        {
-            title: "GitHub",
-            icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500 hover:text-teal-500" />
-            ),
-            href: "https://github.com/YashwanthSwamy",
-            target: "_blank",
-            rel: "noopener noreferrer",
-        },
-    ];
-
     return (
         <section className="w-full pb-6 mb-[50px] py-4 md:mb-4">
             <div className="flex flex-col items-center">
@@ -60,12 +26,12 @@ const Footer = () => {
                     Copyright © 2025 Yashwanth Hirehalli Swamy
                 </p>
 
-                <div className="flex items-center md:gap-3 gap-6">
+                {/* <div className="flex items-center md:gap-3 gap-6">
                     <FloatingSocial
                         mobileClassName="translate-y-20" // only for demo, remove for production
-                        items={links}
+                        items={sidebarLinks}
                     />
-                </div>
+                </div> */}
             </div>
         </section>
     );
